@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EasyWrite — free writing helper for Windows</title>
+<meta name="description" content="Free spelling and grammar help for Windows. Works in Word and email. Private: nothing you write leaves your computer.">
+<meta property="og:title" content="EasyWrite — free writing helper">
+<meta property="og:description" content="Click the green button to download. Free spelling and grammar help for Word and email.">
+<meta property="og:image" content="https://abdulwaseymohammed10.github.io/easywrite/easywrite.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="easywrite.png">
+<style>
+  :root { --bg:#f6f7fb; --card:#fff; --ink:#1d2333; --muted:#5b6478; --green:#15803d; --green-dark:#116a32;
+          --blue:#2563eb; --border:#d7dbe6; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; font-size:20px; line-height:1.5; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  header { display:flex; align-items:center; gap:16px; }
+  header img { width:64px; height:64px; }
+  h1 { font-size: 40px; margin: 0; }
+  .tag { color: var(--muted); margin: 8px 0 28px; font-size: 21px; }
+  .download { display:block; text-align:center; background:var(--green); color:#fff; text-decoration:none;
+              font-size: 30px; font-weight: 700; padding: 26px 20px; border-radius: 14px;
+              box-shadow: 0 4px 14px rgba(21,128,61,.3); }
+  .download:hover, .download:focus { background: var(--green-dark); outline: 4px solid #86efac; }
+  .small { text-align:center; color:var(--muted); font-size:17px; margin: 10px 0 32px; }
+  h2 { font-size: 26px; margin: 34px 0 12px; }
+  ol.steps { list-style:none; padding:0; margin:0; counter-reset: s; }
+  ol.steps li { counter-increment: s; background:var(--card); border:1px solid var(--border); border-radius:12px;
+                padding: 18px 18px 18px 78px; margin: 12px 0; position: relative; }
+  ol.steps li::before { content: counter(s); position:absolute; left:18px; top:16px; width:44px; height:44px;
+                        border-radius:50%; background:var(--blue); color:#fff; font-weight:700; font-size:24px;
+                        display:flex; align-items:center; justify-content:center; }
+  ol.steps b { display:block; font-size:22px; }
+  .note { color: var(--muted); font-size: 18px; margin-top: 4px; }
+  .box { background:var(--card); border:1px solid var(--border); border-radius:12px; padding: 6px 20px; }
+  .box ul { padding-left: 22px; }
+  .box li { margin: 10px 0; }
+  kbd { background:#eef1f7; border:1px solid var(--border); border-bottom-width:3px; border-radius:6px;
+        padding: 1px 7px; font-family: inherit; font-size: 18px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 15px; }
+  footer a { color: var(--muted); }
+  @media (max-width: 520px) { body { font-size:18px; } h1 { font-size: 32px; } .download { font-size: 25px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="easywrite.png" alt="">
+    <h1>EasyWrite</h1>
+  </header>
+  <p class="tag">Free spelling and grammar help for your Windows laptop. Works in Word and email.
+     Private — nothing you write leaves your computer.</p>
+
+  <a class="download" href="https://github.com/abdulwaseymohammed10/easywrite/releases/latest/download/EasyWrite.exe">
+    ⬇&nbsp; Download EasyWrite</a>
+  <p class="small">For Windows 10 and 11 · Free · No account needed</p>
+
+  <h2>How to install</h2>
+  <ol class="steps">
+    <li><b>Click the green button above.</b>
+      <div class="note">If the browser says the file “isn't commonly downloaded”, click <b style="display:inline;font-size:inherit">Keep</b>.</div></li>
+    <li><b>Open the downloaded file “EasyWrite”.</b>
+      <div class="note">If a blue box says “Windows protected your PC”, click <b style="display:inline;font-size:inherit">More info</b>,
+        then <b style="display:inline;font-size:inherit">Run anyway</b>. This is normal for free apps.</div></li>
+    <li><b>Click the green “Start setup” button, then wait.</b>
+      <div class="note">It downloads what it needs one time (10–30 minutes). Keep the laptop plugged in.
+        When it says “All done!”, click “Open EasyWrite”. That's it — it starts by itself every day from now on.</div></li>
+  </ol>
+
+  <h2>How to use it</h2>
+  <div class="box">
+    <ul>
+      <li><b>In Word and email:</b> just type. Mistakes get a coloured line — click the word and pick the fix.</li>
+      <li><b>Fix everything at once in Word:</b> click the green “Fix all mistakes” button at the bottom-right of the page.</li>
+      <li><b>Anywhere else:</b> highlight some text and press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd>.</li>
+      <li><b>Make it professional, friendly or shorter:</b> open EasyWrite from the desktop, paste your text and press a button.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>EasyWrite is free. It uses free and open-source tools: LanguageTool (spelling &amp; grammar), Eclipse Temurin (Java),
+      llama.cpp, and Meta's Llama 3.2. Built with Llama. <a href="NOTICE.md">Licences and notices</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
